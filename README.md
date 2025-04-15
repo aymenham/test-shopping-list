@@ -104,6 +104,7 @@ app.listen(PORT, () => {
 });
 ```
 
+```typescrip
 //des URL en claire
 export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
   return useQuery([Requests.listFoodTag], async () => {
@@ -124,7 +125,7 @@ export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
     return data ?? [];
   });
 };
-
+```
 
 ### Frontend
 
