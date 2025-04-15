@@ -26,9 +26,9 @@ Ce projet est une démonstration d’une application de gestion de recettes, ré
 #### Solution Proposée
 
 - Implémenter une architecture Monorepo pour:
-  - Partager du code entre front et back
-  - Maintenir une cohérence dans les versions
-  - Standardiser les pratiques
+- Partager du code entre front et back
+- Maintenir une cohérence dans les versions
+- Standardiser les pratiques
 - Ajouter un système de validation (ex: class-validator)
 - Implémenter une gestion centralisée des erreurs
 - Ajouter une documentation API (Swagger)
