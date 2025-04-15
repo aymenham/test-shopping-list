@@ -49,7 +49,7 @@ Ce projet est une démonstration d’une application de gestion de recettes, ré
 
 #### Solution Proposée
 
-- Implémenter une architecture modulaire:
+- Implémenter une architecture modulaire: chaque module a un dossier dédier
 - Organisation claire avec modules autonomes
 - Meilleure séparation des responsabilités
 - Composants réutilisables par module
