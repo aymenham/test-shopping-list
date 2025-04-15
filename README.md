@@ -104,28 +104,7 @@ app.listen(PORT, () => {
 });
 ```
 
-```typescrip
-//des URL en claire
-export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
-  return useQuery([Requests.listFoodTag], async () => {
-    const { data } = await axios.get<{ data: Partial<FOOD_TAG> }>(
-      "/food-tags/list"
-    );
-    return data ?? [];
-  });
-};
 
-//Solution: Mettre des CONSTANT
-
-export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
-  return useQuery([Requests.listFoodTag], async () => {
-    const { data } = await axios.get<{ data: Partial<FOOD_TAG> }>(
-    URL.TAG_LIST
-    );
-    return data ?? [];
-  });
-};
-```
 
 ### Frontend
 
@@ -158,6 +137,29 @@ return useMutation([Requests.createIngredient], async ({ name, price }) => {
     throw new Error("Erreur lors de la création de l'ingrédient");
   }
 });;
+```
+
+```typescrip
+// Des URL en claire
+export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
+  return useQuery([Requests.listFoodTag], async () => {
+    const { data } = await axios.get<{ data: Partial<FOOD_TAG> }>(
+      "/food-tags/list"
+    );
+    return data ?? [];
+  });
+};
+
+// Solution: Mettre des CONSTANT
+
+export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
+  return useQuery([Requests.listFoodTag], async () => {
+    const { data } = await axios.get<{ data: Partial<FOOD_TAG> }>(
+    URL.TAG_LIST
+    );
+    return data ?? [];
+  });
+};
 ```
 
 
