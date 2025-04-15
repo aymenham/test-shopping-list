@@ -104,6 +104,28 @@ app.listen(PORT, () => {
 });
 ```
 
+//des URL en claire
+export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
+  return useQuery([Requests.listFoodTag], async () => {
+    const { data } = await axios.get<{ data: Partial<FOOD_TAG> }>(
+      "/food-tags/list"
+    );
+    return data ?? [];
+  });
+};
+
+//Solution: Mettre des CONSTANT
+
+export const useQueryFoodTagList = (): UseQueryResult<any, unknown> => {
+  return useQuery([Requests.listFoodTag], async () => {
+    const { data } = await axios.get<{ data: Partial<FOOD_TAG> }>(
+    URL.TAG_LIST
+    );
+    return data ?? [];
+  });
+};
+
+
 ### Frontend
 
 ```typescript
