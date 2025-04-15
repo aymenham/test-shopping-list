@@ -1,6 +1,6 @@
 # Test Application de Gestion de Recettes Aimene Hamidechi GOFLYNT
 
-Ce projet est une application de gestion de recettes avec une architecture backend et frontend distincte. Voici un aperçu des fonctionnalités, des améliorations récentes et des problèmes identifiés.
+Ce projet est une démonstration d’une application de gestion de recettes, répondant à 4 points précis demandés. Il comprend un backend et un frontend séparés, avec des fonctionnalités claires, des améliorations ciblées et des corrections de bugs bien identifiées.
 
 ## Critique de l'Architecture
 
