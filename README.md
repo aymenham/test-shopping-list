@@ -50,12 +50,12 @@ Ce projet est une démonstration d’une application de gestion de recettes, ré
 #### Solution Proposée
 
 - Implémenter une architecture modulaire:
-  - Organisation claire avec modules autonomes
-  - Meilleure séparation des responsabilités
-  - Composants réutilisables par module
-  - système de validation de champs avec (react-hook-form)
-  - Logique métier encapsulée
-  - Tests plus simples à organiser
+- Organisation claire avec modules autonomes
+- Meilleure séparation des responsabilités
+- Composants réutilisables par module
+- système de validation de champs avec (react-hook-form)
+- Logique métier encapsulée
+- Tests plus simples à organiser
 
 ## Mauvaises Pratiques Identifiées et Solutions
 
