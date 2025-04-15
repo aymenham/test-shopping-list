@@ -157,8 +157,9 @@ return useMutation([Requests.createIngredient], async ({ name, price }) => {
   } catch (error) {
     throw new Error("Erreur lors de la création de l'ingrédient");
   }
-});
+});;
 ```
+
 
 ## Corrections de Bugs
 
